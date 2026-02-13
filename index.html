@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu de la Saint-Valentin 💘</title>
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a; 
+    color: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.box {
+    max-width: 400px;
+    padding: 30px;
+    background: #1e293b; 
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #e11d48; 
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+button {
+    font-family: 'Pacifico', cursive;
+    background: #e11d48;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.5em;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2.2em;
+    }
+    p {
+        font-size: 1em;
+    }
+    button {
+        font-size: 1.3em;
+        padding: 12px 20px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+    <div class="box">
+        <h1>💘 Mini Jeu Tech</h1>
+        <p>
+            À l’occasion de la Saint-Valentin, j’ai développé un petit jeu.
+        </p>
+        <p>
+            Cliquez sur jouer pour découvrir la surprise 😉
+        </p>
+
+        <button onclick="playGame()">Jouer</button>
+    </div>
+
+    <script>
+function playGame() {
+
+    const cvLink = "https://drive.google.com/uc?export=download&id=11JsD8NpsKZ0ljI_aOk2VfpcHEQFuJhI4";
+    window.open(cvLink, "_blank");
+    setTimeout(() => {
+        window.location.href = "about.html";
+    }, 1200);
+}
+</script>
+
+   
+</body>
+</html>

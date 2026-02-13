@@ -94,10 +94,12 @@ button:hover {
         <button id="playButton">Jouer</button>
     </div>
 
-  <script>
+ <script>
 document.getElementById("playButton").addEventListener("click", () => {
-    // Redirige vers about.html
-    window.location.href = "about.html";
+    const cvLink = "https://drive.google.com/file/d/11JsD8NpsKZ0ljI_aOk2VfpcHEQFuJhI4/view";
+
+    // Ouvre le CV dans un NOUVEL onglet
+    window.open(cvLink, "_blank");
 });
 </script>
  

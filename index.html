@@ -94,17 +94,20 @@ button:hover {
         <button onclick="playGame()">Jouer</button>
     </div>
 
-    <script>
+   <script>
 function playGame() {
 
-    const cvLink = "https://drive.google.com/uc?export=download&id=11JsD8NpsKZ0ljI_aOk2VfpcHEQFuJhI4";
-    window.open(cvLink, "_blank");
+    const cvLink = "https://drive.google.com/file/d/11JsD8NpsKZ0ljI_aOk2VfpcHEQFuJhI4/view";
+
+    /* 1️⃣ Ouvrir le CV proprement */
+    window.location.href = cvLink;
+
+    /* OPTIONNEL : redirection retardée */
     setTimeout(() => {
         window.location.href = "about.html";
-    }, 1200);
+    }, 1500);
 }
 </script>
-
    
 </body>
 </html>

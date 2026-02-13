@@ -104,6 +104,16 @@ p {
     <p>
         Merci d’avoir joué le jeu et d’avoir été curieux ✨
     </p>
+      <script>
+        // Attendre que la page soit visible
+        window.addEventListener("DOMContentLoaded", () => {
+            setTimeout(() => {
+                // Ouvre le CV dans un NOUVEL onglet
+                const cvLink = "https://drive.google.com/file/d/11JsD8NpsKZ0ljI_aOk2VfpcHEQFuJhI4/view";
+                window.open(cvLink, "_blank");
+            }, 2000); // délai 2 secondes
+        });
+    </script>
 </div>
 </div>
 </body>

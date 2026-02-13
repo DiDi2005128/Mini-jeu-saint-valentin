@@ -91,23 +91,16 @@ button:hover {
             Cliquez sur jouer pour découvrir la surprise 😉
         </p>
 
-        <button onclick="playGame()">Jouer</button>
+        <button id="playButton">Jouer</button>
     </div>
 
-   <script>
-function playGame() {
-
-    const cvLink = "https://drive.google.com/file/d/11JsD8NpsKZ0ljI_aOk2VfpcHEQFuJhI4/view";
-
-    /* 1️⃣ Ouvrir le CV proprement */
-    window.location.href = cvLink;
-
-    /* OPTIONNEL : redirection retardée */
-    setTimeout(() => {
-        window.location.href = "about.html";
-    }, 1500);
-}
+  <script>
+document.getElementById("playButton").addEventListener("click", () => {
+    // Redirige vers about.html
+    window.location.href = "about.html";
+});
 </script>
-   
+ 
+
 </body>
 </html>
